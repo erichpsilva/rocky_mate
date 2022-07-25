@@ -1,0 +1,16 @@
+#Enable this repository by entering:
+
+dnf copr enable stenstorp/MATE
+
+#As noted from the link above, you also need the Powertools repository and the EPEL. Go ahead and enable those now:
+
+sudo dnf config-manager --set-enabled powertools
+
+sudo dnf install epel-release
+
+#And answer 'Y' to install the EPEL.
+
+sudo dnf copr enable stenstorp/lightdm
+
+dnf update
+
